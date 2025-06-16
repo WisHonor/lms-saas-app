@@ -8,7 +8,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { cn } from "@/lib/utils";
-import { Import } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { getSubjectColor } from "@/utils";
@@ -24,7 +23,7 @@ interface CompanionsListProps{
 const CompanionsList = ({title, companions, classNames }: CompanionsListProps) => {
   return (
     <article className={cn('companion-list', classNames)}>   
-        <h2 className="font-bold text-3xl">Recent Sessions</h2>
+        <h2 className="font-bold text-3xl">{title}</h2>
 
         <Table>
             
